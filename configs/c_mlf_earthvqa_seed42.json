@@ -1,0 +1,37 @@
+{
+  "model_dir": "pretrained/SmolVLM-500M-Instruct",
+  "manifest": "data/processed/manifests/earthvqa_baseline_30k_seed42.json",
+  "output_dir": "outputs/c_mlf_earthvqa_seed42",
+  "train_scope": "text_connector",
+  "epochs": 1,
+  "batch_size": 1,
+  "gradient_accumulation": 8,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.03,
+  "max_grad_norm": 1.0,
+  "log_every": 20,
+  "checkpoint_every": 500,
+  "max_updates": 0,
+  "seed": 42,
+  "gradient_checkpointing": true,
+  "resume_from": null,
+  "no_save": false,
+  "experiment_group": "C",
+  "method": "SmolVLM-500M-Instruct + MLF main scheme A",
+  "initialization": "original pretrained checkpoint, never baseline final",
+  "mlf": {
+    "format_version": 2,
+    "implementation": "pre_connector_zero_projection_residual_v2",
+    "model_type": "idefics3",
+    "layers_one_based": [
+      4,
+      8,
+      12
+    ],
+    "vision_width": 768,
+    "layer_norm_eps": 1e-06,
+    "learnable_scaling": false,
+    "added_parameters": 1182720
+  }
+}

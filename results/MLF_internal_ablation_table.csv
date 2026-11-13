@@ -1,0 +1,5 @@
+﻿configuration,overall_em_pct,token_f1_pct,Basic Counting_em_pct,Basic Judging_em_pct,Comprehensive Analysis_em_pct,Object Situation Analysis_em_pct,Reasoning-based Counting_em_pct,Reasoning-based Judging_em_pct,answer_unit_precision_pct,answer_unit_recall_pct,complete_coverage_pct,omission_rate_pct,mean_answer_length_tokens,added_parameters,overall_correct,dev_n
+V12,73.24,80.44,76.36,83.73,26.88,50.62,84.52,81.94,53.45,34.83,10.84,65.17,1.86,0,6447,8803
+V12 + H4,76.24,82.68,76.98,85.49,36.71,60.37,82.94,84.21,56.62,35.99,12.74,64.01,1.85,591360,6711,8803
+V12 + H8,76.51,83.04,77.38,86.05,37.40,61.62,83.73,83.98,59.19,37.14,13.01,62.86,1.85,591360,6735,8803
+V12 + H4 + H8,77.80,84.08,77.89,86.56,42.76,62.86,82.94,85.06,61.89,39.33,15.18,60.67,1.84,1182720,6849,8803
